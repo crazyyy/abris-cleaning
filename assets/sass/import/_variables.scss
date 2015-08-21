@@ -8,8 +8,8 @@ $base-line-height: 1.5;
 $heading-line-height: 1.2;
 
 // Other Sizes
-$width: 980px;
-$footer: 50px;
+$width: 1210px;
+$footer: 86px;
 $footer_margin: $footer - 2 * $footer;
 $base-border-radius: 3px;
 $base-spacing: $base-line-height * 1em;
@@ -17,13 +17,15 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$blue: #477dca;
+$blue: #5faec5;
 $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #ddd;
+$black: #000000;
+$violet: #412362;
 
 // Font Colors
-$base-font-color: $dark-gray;
+$base-font-color: $black;
 $action-color: $blue;
 
 // Border
