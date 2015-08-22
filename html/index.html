@@ -29,161 +29,249 @@
 
       <nav class="nav" role="navigation">
         <ul class="headnav">
-          <li>menu</li>
-          <li>menu</li>
+          <li>Главная</li>
+          <li>Услуги</li>
+          <li>О нас</li>
+          <li>Преимущества</li>
+          <li>Отзывы</li>
+          <li>Контакты</li>
         </ul>
       </nav><!-- /nav -->
+
+      <ul class="phone-block">
+        <li><a href="tel:83838888888">8 (383) 888 88 88</a></li>
+        <li><a href="tel:89231445240">8 (383) 888 88 88</a></li>
+        <li><a class="recall" href="#">заказать звонок</a></li>
+      </ul>
 
     </div><!-- /.inner -->
   </header><!-- /header -->
 
   <section role="main">
-    <div class="inner">
 
-      <article>
-        <h1 class="ctitle">Пример контента (рыба)</h1>
-        <p>The purpose of this HTML is to help determine what default settings are with Bitters and to make sure that all possible HTML Elements are included in this HTML so as to not miss any possible Elements when designing a site.</p>
+    <article class="block-first">
+      <div class="inner">
+        <div class="block-first-heading">
+          <span>Ваш</span><span>дом, коттедж, офис, квартира станут чистыми </span><span>уже через 4 часа</span>
+        </div><!-- /.block-first-heading -->
+        <div class="block-first-content">руками обученных<br>сотрудников, которые<br>уже убрали <span class="white">9000 домов</span> <span class="violet">в Новосибирске и НСО</span></div>
+        <div class="order-form">
+          <h5>скидка 15%</h5>
+          <h6>на все услуги компании</h6>
+          <form action="">
+            <input type="text" placeholder="Имя">
+            <input type="text" placeholder="Телефон">
+            <button class="btn btn-orange">получить скидку</button>
+          </form>
+        </div>
+      </div><!-- /.inner -->
+    </article><!-- /.block-first -->
 
-        <hr>
+    <article class="block-second">
+      <ul class="inner">
+        <li><span>10</span>лет на рынке профессиональной уборки</li>
+        <li><span>25</span>мобильных бригад</li>
+        <li><span>>1000</span>постоянных клиентов</li>
+      </ul><!-- /.inner -->
+    </article><!-- /.block-second -->
 
-        <h1>h1. Heading</h1>
-        <h2>h2. Heading</h2>
-        <h3>h3. Heading</h3>
-        <h4>h4. Heading</h4>
-        <h5>h5. Heading</h5>
-        <h6>h6. Heading</h6>
+    <article class="block-third">
+      <div class="inner">
+        <h1><span>САМЫЕ</span> ПОПУЛЯРНЫЕ УСЛУГИ</h1>
+        <h2>Все виды услуг оказываются круглосуточно и без выходных</h2>
 
-        <hr>
+        <ul class="services-list">
+          <li href="" class="service-link s1 current" data-service="s1">
+            Уборка <span>комплексная</span>
+          </li>
+          <li href="" class="service-link s1 current" data-service="s2">
+            Уборка <span>генеральная</span>
+          </li>
+          <li href="" class="service-link s1 current" data-service="s3">
+            Уборка <span>после ремонта</span>
+          </li>
+          <li href="" class="service-link s1 current" data-service="s4">
+            Мытье <span>фасадов, окон, витрин</span>
+          </li>
+          <li href="" class="service-link s1 current" data-service="s5">
+            Для <span>юридических лиц</span>
+          </li>
+          <li href="" class="service-link s1 current" data-service="s6">
+            <span>Доп. услуги</span>
+          </li>
 
-        <h1 class="ctitle">Paragraph</h1>
+        </ul><!-- services-list -->
 
-        <p>Lorem ipsum dolor sit amet, <a href="#" title="test link">test link</a> adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
+        <div class="service-block service-block-s2" id="s2">
+          <p>В поддерживающею уборку квартиры или коттеджа входит уборка и мойка всех поверхностей не выше 2-х метров от пола. <span>ПОЛНЫЙ ПЕРЕЧЕНЬ УСЛУГ ВКЛЮЧАЕТ В СЕБЯ:</span></p>
+          <ul>
+            <li>Уборку комнат и коридоров – пол, плинтус, зеркало, суха чистка ковров, мебель снаружи, вынос мусора.</li>
+            <li>Уборку ванной комнаты и туалета – пол, мебель, ванна/душ, туалет, раковина, сантехника, стиральная машина, стены, мебель внутри и снаружи</li>
+            <li>Уборку на кухне – пол, мебель, посуда, микроволновка/плита/холодильник снаружи, вытяжка, удаление местных загрязнений, вынос мусора</li>
+          </ul>
+          <a href="#" class="btn brn-orange">от 1 800 руб.</a>
+          <a href="#" class="price-dl">скачать полный прайс-лист</a>
+        </div><!-- service-block -->
 
-        <p>Lorem ipsum dolor sit amet, <em>emphasis</em> consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
+      </div><!-- /.inner -->
+    </article><!-- /.block-third -->
 
-        <hr>
+    <article class="block-fourth">
+      <div class="inner">
+        <h1>КАК МЫ <span>НАВОДИМ ЧИСТОТУ</span> В ДОМЕ</h1>
+        <div class="yotuber">
 
-        <h1 class="ctitle">List Types</h1>
+        </div><!-- /.yotuber -->
+        <a href="" class="btn btn-orange">Заказать уборку</a>
+      </div><!-- /.inner -->
+    </article><!-- /.block-fourth -->
 
-        <h3>Definition List - dl > dt + dd</h3>
-        <dl>
-          <dt>Definition List Title</dt>
-          <dd>This is a definition list division.</dd>
-        </dl>
-
-        <h3>Ordered List - ol</h3>
-        <ol>
-          <li>List Item 1</li>
-          <li>List Item 2</li>
-          <li>List Item 3</li>
-        </ol>
-
-        <h3>Unordered List - ul</h3>
+    <article class="block-six">
+      <div class="inner">
+        <h1><span>5 ШАГОВ</span> К ЧИСТОТЕ И УЮТУ У ВАС ДОМА</h1>
         <ul>
-          <li>List Item 1</li>
-          <li>List Item 2</li>
-          <li>List Item 3</li>
+          <li><span>шаг 1 <a href="#" class="btn btn-small btn-orange">Оставить заявку</a></span>Вы оставляете заявку на сайте</li>
+          <li><span>шаг 2</span>Наш специалист связывается с вами и консультирует по всем вопросам</li>
+          <li><span>шаг 3</span>Мы рассчитываем стоимость</li>
+          <li><span>шаг 4</span>Мы выезжаем и проводим уборку</li>
+          <li><span>шаг 5</span>Вы оплачиваете только после оказания услуг</li>
+        </ul>
+      </div><!-- /.inner -->
+    </article><!-- /.block-six -->
+
+    <article class="block-seven">
+      <div class="inner">
+
+        <h3><span>почувствуйте</span> разницу сами</h3>
+        <div class="block-left">
+          <h4>С чем можно столкнуться при обращении к непрофессионалам</h4>
+          <ul>
+            <li>Опоздание или срыв заказа</li>
+            <li>Не соблюдение сроков оказания услуг</li>
+            <li>Трудно связаться с менеджером</li>
+            <li>Не квалифицированный персонал</li>
+            <li>Стандартные тарифы на услуги</li>
+            <li>Отсутствие гарантий</li>
+          </ul>
+        </div><!-- block-left -->
+        <div class="block-right">
+          <h4>Обращение к профессионалам <span>Абрис-Клининг</span></h4>
+          <ul>
+            <li>Прибытие точно в срок</li>
+            <li>Своевременное выполнение заказа</li>
+            <li>Круглосуточная работа Call-центра</li>
+            <li>Только обученные сотрудники</li>
+            <li>Гибкая ценовая политика, акции и спецпредложения</li>
+            <li>Оплата только после оказания услуг</li>
+          </ul>
+        </div><!-- /.block-right -->
+
+      </div><!-- /.inner -->
+    </article><!-- /.block-seven -->
+
+    <article class="block-eight">
+      <div class="inner">
+
+        <h1><span>Результаты</span> нашей работы</h1>
+
+        <uk class="bx-slider">
+          <li><img src="" alt=""></li>
+        </uk>
+
+        <a href="#" class="btn btn-orange">Хочу так же</a>
+
+      </div><!-- /.inner -->
+    </article><!-- /.block-eight -->
+
+    <article class="block-nine">
+      <div class="inner">
+
+        <h1>ПОЧЕМУ <span>ВЫБИРАЮТ</span> ИМЕННО <span>НАС</span></h1>
+        <ul>
+          <li>
+            <h4><span>ТОЛЬКО </span>ОБУЧЕННЫЕСОТРУДНИКИ</h4>
+            <p>Весь персонал перед выездом на объект проходит подробный инструктаж, чтобы качество уборки оставалось на высоком уровне и были учтены особенности Вашего объекта. За Вами закрепляется персональный менеджер.</p>
+          </li>
+          <li>
+            <h4><span>круглосуточная </span>мобильная бригада</h4>
+          </li>
+          <li>
+            <h4>срочный выезд <span>на уборку</span></h4>
+          </li>
+          <li>
+            <h4><span>современное</span> оборудование</h4>
+          </li>
         </ul>
 
-        <hr>
+        <div class="box-blue">
+          <span>>90%</span>
+          <p>клиентов воспользовавшись нашими услугами, обращаются к нам повторно и становятся постоянными клиентами Абрис-Клининг</p>
+        </div><!-- /.box-blue -->
 
-        <h1 class="ctitle">Fieldsets and Form Elements</h1>
+        <div class="box-transparent">
+          <p>Мы несем полную материальную ответственность за обслуживаемый нами объект. Если в ходе нашей работы будет что-то испорчено, то мы незамедлительно возместим Вам ущерб.</p>
+        </div><!-- /.box-transparent -->
 
-        <fieldset>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.</p>
+      </div><!-- /.inner -->
+    </article><!-- /.block-nine -->
 
-          <form>
-            <h2>Form Element</h2>
+    <article class="block-eleven">
+      <div class="inner">
 
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui.</p>
+        <h1><span>НУЖНО <span>СРОЧНО УБРАТЬ</span> ДОМ ИЛИ КОТТЕДЖ?</span></h1>
+        <ul>
+          <li><span>> 12 000</span>домов убрано</li>
+          <li><span>> 200</span>сотрудников в компании</li>
+        </ul>
 
-            <p><label for="text_field">Text Field:</label>
-              <input type="text" id="text_field"></p>
+        <form action="">
+          <p>После отправки заказа наши специалисты свяжутся с Вами ближайшее время</p>
+          <input type="text" placeholder="Имя">
+          <input type="text" placeholder="Телефон">
+          <button class="btn btn-orange">заказать уборку</button>
+        </form>
 
-            <p><label for="text_area">Text Area:</label>
-              <textarea id="text_area"></textarea></p>
+      </div><!-- /.inner -->
+    </article><!-- /.block-eleven -->
 
-            <p><label for="select_element">Select Element:</label>
-              <select name="select_element">
-                <optgroup label="Option Group 1">
-                  <option value="1">Option 1</option>
-                  <option value="2">Option 2</option>
-                  <option value="3">Option 3</option>
-                </optgroup>
-                <optgroup label="Option Group 2">
-                  <option value="1">Option 1</option>
-                  <option value="2">Option 2</option>
-                  <option value="3">Option 3</option>
-                </optgroup>
-            </select></p>
+    <article class="block-twelve">
+      <div class="inner">
 
-            <p><label for="radio_buttons">Radio Buttons:</label>
-              <label>
-                <input type="radio" class="radio" name="radio_button" value="radio_1"> Radio 1
-              </label>
-              <label>
-                <input type="radio" class="radio" name="radio_button" value="radio_2"> Radio 2
-              </label>
-              <label>
-                <input type="radio" class="radio" name="radio_button" value="radio_3"> Radio 3
-              </label>
-            </p>
+        <h1>отзывы <span>о нашей работе</span></h1>
 
-            <p><label for="checkboxes">Checkboxes:</label>
-              <label>
-                <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"> Checkbox 1
-              </label>
-              <label>
-                <input type="checkbox" class="checkbox" name="checkboxes" value="check_2"> Checkbox 2
-              </label>
-              <label>
-                <input type="checkbox" class="checkbox" name="checkboxes" value="check_3"> Checkbox 3
-              </label>
-            </p>
+        <ul>
+          <li>
+            <h4 class="vk"><a href="">ПЕТР СТЕПАШИН</a></h4>
+            <p>Заказал уборку коттеджа после ремонта и мойку окон. Персонал в фирме опытный, это чувствуется. Работали четко, разделили обязанности, пользовались специальным оборудованием, которое привезли с собой. Качеством услуг доволен, рекомендую. Заказал уборку коттеджа после ремонта и мойку окон. Персонал в фирме опытный, это чувствуется.</p>
+          </li>
+        </ul>
 
-            <p><label for="password">Password:</label>
-              <input type="password" class="password" name="password">
-            </p>
+      </div><!-- /.inner -->
+    </article><!-- /.block-twelve -->
 
-            <p><label for="file">File Input:</label>
-              <input type="file" class="file" name="file">
-            </p>
+    <article class="block-thirteen">
+      <div class="inner">
 
-
-            <p><input type="submit" value="Submit"></p>
+        <div class="box-contact">
+          <h3>Контакты</h3>
+          <p>г.Новосбирск, ул.Челюскинцев 44/2</p>
+          <a href="tel:83838888888">8 (383) 888 88 88</a>
+          <a href="tel:89231445240">8 (923) 144 52 40</a>
+          <h3>закажите уборку</h3>
+          <form action="">
+            <p>После отправки заказа наши специалисты свяжутся с Вами ближайшее время</p>
+            <input type="text" placeholder="Имя">
+            <input type="text" placeholder="Телефон">
+            <button class="btn btn-orange">заказать уборку</button>
           </form>
-        </fieldset>
+        </div><!-- /.box-contact -->
 
-        <hr>
+        <div class="box-map">
 
-        <h1 class="ctitle">Tables</h1>
+        </div><!-- /.box-map -->
 
-        <table cellspacing="0" cellpadding="0">
-          <tbody>
-            <tr>
-              <th>Table Header 1</th><th>Table Header 2</th><th>Table Header 3</th>
-            </tr>
-            <tr>
-              <td>Division 1</td><td>Division 2</td><td>Division 3</td>
-            </tr>
-            <tr class="even">
-              <td>Division 1</td><td>Division 2</td><td>Division 3</td>
-            </tr>
-            <tr>
-              <td>Division 1</td><td>Division 2</td><td>Division 3</td>
-            </tr>
-          </tbody>
-        </table>
-      </article>
-
-      <aside class="sidebar" role="complementary">
-        <div class="widget">
-          <h6>Пример виджета</h6>
-          <ul>
-            <li class="cat-item-none">Рубрик нет</li>
-          </ul>
-        </div><!-- widget -->
-      </aside><!-- /sidebar -->
+      </div><!-- /.inner -->
+    </article><!-- /.block-thirteen -->
 
     </div><!-- /.inner -->
   </section><!-- /section -->
@@ -192,9 +280,7 @@
 <footer role="contentinfo">
   <div class="inner">
 
-    <p class="copyright">
-      © 2015 Собственность. Работает на html2wp easy.
-    </p><!-- /copyright -->
+    <p class="copyright">© 2004-2015 OOO" Абрис" ОГРН 1145476010877 <br>Все права защищены <br> <a href="">Политика конфиденциальности</a></p><!-- /copyright -->
 
   </div><!-- /.inner -->
 </footer><!-- /footer -->
