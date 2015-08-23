@@ -709,8 +709,9 @@ article {
   height: 730px;
   padding-top: 60px;
 
-  background-image: url(../img/block-six.png);
-  background-repeat: repeat;
+  background-image: url(../img/block-six.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
   h1 {
     width: 480px;
     margin-bottom: 100px;
@@ -746,27 +747,47 @@ article {
         text-shadow: 20px 20px 7px rgba(0, 0, 0, .2);
       }
       &:before {
+        position: absolute;
+        top: 10px;
+        left: 25px;
+
         @extend .dblock;
       }
       &:nth-child(1) {
         margin-right: 90px;
         padding: 20px 50px 0 115px;
+        &:before {
+          @include sprite($sprite-block-six-1);
+        }
         .btn {
           margin-top: 20px;
         }
       }
       &:nth-child(2) {
         margin-right: 10px;
+                &:before {
+          @include sprite($sprite-block-six-2);
+        }
       }
       &:nth-child(3) {
+                &:before {
+          @include sprite($sprite-block-six-3);
+        }
         width: 320px;
         margin-right: 50px;
-
       }
       &:nth-child(4) {
-        margin-left: 460px;
         margin-right: 10px;
+        margin-left: 460px;
+                &:before {
+          @include sprite($sprite-block-six-4);
+        }
+      }
+      &:nth-child(5) {
 
+                &:before {
+          @include sprite($sprite-block-six-5);
+        }
       }
     }
   }
