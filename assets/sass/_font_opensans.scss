@@ -40,3 +40,14 @@ $os-font-path:        "../fonts" !default;
     font-weight: 600;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('#{$os-font-path}/opensans-extrabold-webfont.eot');
+    src: url('#{$os-font-path}/opensans-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$os-font-path}/opensans-extrabold-webfont.woff') format('woff'),
+         url('#{$os-font-path}/opensans-extrabold-webfont.ttf') format('truetype'),
+         url('#{$os-font-path}/opensans-extrabold-webfont.svg#open_sanssemibold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
