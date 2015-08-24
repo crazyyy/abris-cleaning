@@ -29,12 +29,12 @@
 
       <nav class="nav" role="navigation">
         <ul>
-          <li><a href="">Главная</a></li>
-          <li class="current"><a href="">Услуги</a></li>
-          <li><a href="">О нас</a></li>
-          <li><a href="">Преимущества</a></li>
-          <li><a href="">Отзывы</a></li>
-          <li><a href="">Контакты</a></li>
+          <li class="menuItem current"><a href="#home">Главная</a></li>
+          <li class="menuItem"><a href="#features">Услуги</a></li>
+          <li class="menuItem"><a href="#about">О нас</a></li>
+          <li class="menuItem"><a href="#supers">Преимущества</a></li>
+          <li class="menuItem"><a href="#review">Отзывы</a></li>
+          <li class="menuItem"><a href="#contact">Контакты</a></li>
         </ul>
       </nav><!-- /nav -->
 
@@ -49,7 +49,7 @@
 
   <section role="main">
 
-    <article class="block-first">
+    <article id="home" class="block-first">
       <div class="inner">
         <div class="block-first-heading">
           <span>Ваш</span><span>дом, коттедж, офис,<br>квартира станут чистыми </span><span>уже через 4 часа</span>
@@ -59,29 +59,30 @@
           <h5>скидка 15%</h5>
           <h6>на все услуги компании</h6>
           <form action="">
-            <input type="text" placeholder="Имя">
-            <input type="text" placeholder="Телефон">
+            <div class="timer"></div>
+            <input type="text" name="name" placeholder="Имя">
+            <input type="text" name="phone" placeholder="Телефон">
             <button class="btn btn-orange">получить скидку</button>
           </form>
         </div>
       </div><!-- /.inner -->
     </article><!-- /.block-first -->
 
-    <article class="block-second">
+    <article class="block-second scroll-animate animate">
       <ul class="inner">
-        <li><span>10</span>лет на рынке профессиональной уборки</li>
-        <li><span>25</span>мобильных бригад</li>
-        <li><span>>1000</span>постоянных клиентов</li>
+        <li><span class="num" data-number="10">10</span>лет на рынке профессиональной уборки</li>
+        <li><span class="num" data-number="25">25</span>мобильных бригад</li>
+        <li><span class="num" data-number="1000">1000</span>постоянных клиентов</li>
       </ul><!-- /.inner -->
     </article><!-- /.block-second -->
 
-    <article class="block-third">
+    <article id="features" class="block-third">
       <div class="inner">
         <h1><span>САМЫЕ</span> ПОПУЛЯРНЫЕ УСЛУГИ</h1>
         <h2>Все виды услуг оказываются круглосуточно и без выходных</h2>
 
         <ul class="services-list">
-          <li href="" class="service-link s1 current" data-service="s1">
+          <li href="" class="service-link s1" data-service="s1">
             Уборка <span>комплексная</span>
           </li>
           <li href="" class="service-link s2" data-service="s2">
@@ -102,7 +103,67 @@
 
         </ul><!-- services-list -->
 
+        <div class="service-block service-block-s2" id="s1">
+          <p>В поддерживающею уборку квартиры или коттеджа входит уборка и мойка всех поверхностей не выше 2-х метров от пола. <span>ПОЛНЫЙ ПЕРЕЧЕНЬ УСЛУГ ВКЛЮЧАЕТ В СЕБЯ:</span></p>
+          <ul>
+            <li>Уборку комнат и коридоров – пол, плинтус, зеркало, суха чистка ковров, мебель снаружи, вынос мусора.</li>
+            <li>Уборку ванной комнаты и туалета – пол, мебель, ванна/душ, туалет, раковина, сантехника, стиральная машина, стены, мебель внутри и снаружи</li>
+            <li>Уборку на кухне – пол, мебель, посуда, микроволновка/плита/холодильник снаружи, вытяжка, удаление местных загрязнений, вынос мусора</li>
+          </ul>
+          <h3>от 1 800 руб.</h3>
+          <a href="#" class="btn btn-orange">от 1 800 руб.</a>
+          <a href="#" class="price-dl">скачать полный прайс-лист</a>
+        </div><!-- service-block -->
+
         <div class="service-block service-block-s2" id="s2">
+          <p>В поддерживающею уборку квартиры или коттеджа входит уборка и мойка всех поверхностей не выше 2-х метров от пола. <span>ПОЛНЫЙ ПЕРЕЧЕНЬ УСЛУГ ВКЛЮЧАЕТ В СЕБЯ:</span></p>
+          <ul>
+            <li>Уборку комнат и коридоров – пол, плинтус, зеркало, суха чистка ковров, мебель снаружи, вынос мусора.</li>
+            <li>Уборку ванной комнаты и туалета – пол, мебель, ванна/душ, туалет, раковина, сантехника, стиральная машина, стены, мебель внутри и снаружи</li>
+            <li>Уборку на кухне – пол, мебель, посуда, микроволновка/плита/холодильник снаружи, вытяжка, удаление местных загрязнений, вынос мусора</li>
+          </ul>
+          <h3>от 1 800 руб.</h3>
+          <a href="#" class="btn btn-orange">от 1 800 руб.</a>
+          <a href="#" class="price-dl">скачать полный прайс-лист</a>
+        </div><!-- service-block -->
+
+        <div class="service-block service-block-s2" id="s3">
+          <p>В поддерживающею уборку квартиры или коттеджа входит уборка и мойка всех поверхностей не выше 2-х метров от пола. <span>ПОЛНЫЙ ПЕРЕЧЕНЬ УСЛУГ ВКЛЮЧАЕТ В СЕБЯ:</span></p>
+          <ul>
+            <li>Уборку комнат и коридоров – пол, плинтус, зеркало, суха чистка ковров, мебель снаружи, вынос мусора.</li>
+            <li>Уборку ванной комнаты и туалета – пол, мебель, ванна/душ, туалет, раковина, сантехника, стиральная машина, стены, мебель внутри и снаружи</li>
+            <li>Уборку на кухне – пол, мебель, посуда, микроволновка/плита/холодильник снаружи, вытяжка, удаление местных загрязнений, вынос мусора</li>
+          </ul>
+          <h3>от 1 800 руб.</h3>
+          <a href="#" class="btn btn-orange">от 1 800 руб.</a>
+          <a href="#" class="price-dl">скачать полный прайс-лист</a>
+        </div><!-- service-block -->
+
+        <div class="service-block service-block-s2" id="s4">
+          <p>В поддерживающею уборку квартиры или коттеджа входит уборка и мойка всех поверхностей не выше 2-х метров от пола. <span>ПОЛНЫЙ ПЕРЕЧЕНЬ УСЛУГ ВКЛЮЧАЕТ В СЕБЯ:</span></p>
+          <ul>
+            <li>Уборку комнат и коридоров – пол, плинтус, зеркало, суха чистка ковров, мебель снаружи, вынос мусора.</li>
+            <li>Уборку ванной комнаты и туалета – пол, мебель, ванна/душ, туалет, раковина, сантехника, стиральная машина, стены, мебель внутри и снаружи</li>
+            <li>Уборку на кухне – пол, мебель, посуда, микроволновка/плита/холодильник снаружи, вытяжка, удаление местных загрязнений, вынос мусора</li>
+          </ul>
+          <h3>от 1 800 руб.</h3>
+          <a href="#" class="btn btn-orange">от 1 800 руб.</a>
+          <a href="#" class="price-dl">скачать полный прайс-лист</a>
+        </div><!-- service-block -->
+
+        <div class="service-block service-block-s2" id="s5">
+          <p>В поддерживающею уборку квартиры или коттеджа входит уборка и мойка всех поверхностей не выше 2-х метров от пола. <span>ПОЛНЫЙ ПЕРЕЧЕНЬ УСЛУГ ВКЛЮЧАЕТ В СЕБЯ:</span></p>
+          <ul>
+            <li>Уборку комнат и коридоров – пол, плинтус, зеркало, суха чистка ковров, мебель снаружи, вынос мусора.</li>
+            <li>Уборку ванной комнаты и туалета – пол, мебель, ванна/душ, туалет, раковина, сантехника, стиральная машина, стены, мебель внутри и снаружи</li>
+            <li>Уборку на кухне – пол, мебель, посуда, микроволновка/плита/холодильник снаружи, вытяжка, удаление местных загрязнений, вынос мусора</li>
+          </ul>
+          <h3>от 1 800 руб.</h3>
+          <a href="#" class="btn btn-orange">от 1 800 руб.</a>
+          <a href="#" class="price-dl">скачать полный прайс-лист</a>
+        </div><!-- service-block -->
+
+        <div class="service-block service-block-s2" id="s6">
           <p>В поддерживающею уборку квартиры или коттеджа входит уборка и мойка всех поверхностей не выше 2-х метров от пола. <span>ПОЛНЫЙ ПЕРЕЧЕНЬ УСЛУГ ВКЛЮЧАЕТ В СЕБЯ:</span></p>
           <ul>
             <li>Уборку комнат и коридоров – пол, плинтус, зеркало, суха чистка ковров, мебель снаружи, вынос мусора.</li>
@@ -117,11 +178,11 @@
       </div><!-- /.inner -->
     </article><!-- /.block-third -->
 
-    <article class="block-fourth">
+    <article id="about" class="block-fourth">
       <div class="inner">
         <h1>КАК МЫ <span>НАВОДИМ ЧИСТОТУ</span> В ДОМЕ</h1>
         <div class="yotuber">
-
+          <iframe width="813" height="610" src="https://www.youtube.com/embed/6OIt_hPhgSw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
         </div><!-- /.yotuber -->
         <a href="" class="btn btn-orange">Заказать уборку</a>
       </div><!-- /.inner -->
@@ -140,7 +201,7 @@
       </div><!-- /.inner -->
     </article><!-- /.block-six -->
 
-    <article class="block-seven">
+    <article id="supers" class="block-seven">
       <div class="inner">
 
         <h3><span>почувствуйте</span> разницу сами</h3>
@@ -227,15 +288,15 @@
 
         <form action="">
           <p>После отправки заказа наши специалисты свяжутся с Вами ближайшее время</p>
-          <input type="text" placeholder="Имя">
-          <input type="text" placeholder="Телефон">
+          <input type="text" name="name" placeholder="Имя">
+          <input type="text" name="phone" placeholder="Телефон">
           <button class="btn btn-orange">заказать уборку</button>
         </form>
 
       </div><!-- /.inner -->
     </article><!-- /.block-eleven -->
 
-    <article class="block-twelve">
+    <article id="review" class="block-twelve">
       <div class="inner">
 
         <h1>отзывы <span>о нашей работе</span></h1>
@@ -250,7 +311,7 @@
       </div><!-- /.inner -->
     </article><!-- /.block-twelve -->
 
-    <article class="block-thirteen">
+    <article id="contact" class="block-thirteen">
       <div class="box-map">
 
       </div><!-- /.box-map -->
@@ -263,8 +324,8 @@
           <h4>закажите уборку</h4>
           <form action="">
             <p>После отправки заказа наши специалисты свяжутся с Вами ближайшее время</p>
-            <input type="text" placeholder="Имя">
-            <input type="text" placeholder="Телефон">
+            <input type="text" name="name" placeholder="Имя">
+            <input type="text" name="phone" placeholder="Телефон">
             <button class="btn btn-orange">заказать уборку</button>
           </form>
         </div><!-- /.box-contact -->
@@ -288,6 +349,12 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery.js"><\/script>')</script>
+    <script type="text/javascript" src="js/stickUp.min.js"></script>
+    <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+    <script type="text/javascript" src="js/jquery.plugin.min.js"></script>
+    <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
+    <script type="text/javascript" src="js/jquery.countdown-ru.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
 
 </body>
