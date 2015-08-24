@@ -118,3 +118,15 @@ $(document).ready(function(){
   });
 });
 // services
+$('.owl-carousel').owlCarousel({
+  loop: false,
+  nav: false,
+  dots: true,
+  items: 1,
+  mouseDrag: false,
+  touchDrag: false,
+  dotsSpeed: 600
+})
+// $(document).ready(function(){
+//   $(".owl-carousel").owlCarousel();
+// });

@@ -1,5 +1,6 @@
 @import 'import/reset';
 @import 'import/variables';
+@import 'import/owl.carousel';
 @import 'import/buttons';
 @import 'import/forms';
 @import 'import/lists';
@@ -427,7 +428,6 @@ article {
         span {
           left: 110px;
           &:before {
-
             font-weight: $ebold;
             line-height: .7;
 
@@ -612,6 +612,7 @@ article {
     }
   }
   .service-block {
+    display: none;
     float: right;
 
     width: 50%;
@@ -621,7 +622,6 @@ article {
     border: 5px dotted #dedede;
     border-left: 0;
     border-radius: 0 8px 8px 0;
-    display: none;
     p {
       font-size: em(18, 16);
 
@@ -715,6 +715,10 @@ article {
 .block-fourth {
   height: 1100px;
   padding-top: 80px;
+
+  background-image: url(../img/block-fourth.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
   .inner {
     height: 100%;
   }
@@ -727,22 +731,36 @@ article {
     position: absolute;
     z-index: 0;
     top: 210px;
-    left: 200px;
+    left: 215px;
 
     width: 810px;
     height: 610px;
+    &:before,
     &:after {
       position: absolute;
       z-index: 2;
+
+      background-repeat: no-repeat;
+
+      @extend .dblock;
+    }
+    &:before {
       top: -107px;
       left: -216px;
 
-      width: 1365px;
+      width: 281px;
       height: 837px;
 
-      background-image: url(../img/yotuber.png);
+      background-image: url(../img/yotuber-wooman.png);
+    }
+    &:after {
+      top: 606px;
+      left: 24px;
 
-      @extend .dblock;
+      width: 746px;
+      height: 52px;
+
+      background-image: url(../img/yotuber-shadow.png);
     }
   }
   .btn {
@@ -941,9 +959,31 @@ article {
   height: 800px;
   padding-top: 80px;
   h1 {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 
     @extend .zebra;
+  }
+  .owl-carousel {
+    margin-bottom: 30px;
+    .owl-controls {
+      .owl-dots {
+        text-align: center;
+      }
+      .owl-dot {
+        display: inline-block;
+
+        width: 16px;
+        height: 16px;
+        margin: 0 5px;
+
+        border-radius: 50%;
+
+        @include sprite($sprite-owl-dot);
+        &.active {
+          @include sprite($sprite-owl-dot-active);
+        }
+      }
+    }
   }
   .btn {
     font-weight: bold;
