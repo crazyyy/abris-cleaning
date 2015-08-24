@@ -765,27 +765,31 @@ article {
       }
       &:nth-child(2) {
         margin-right: 10px;
-                &:before {
+        &:before {
           @include sprite($sprite-block-six-2);
         }
       }
       &:nth-child(3) {
-                &:before {
-          @include sprite($sprite-block-six-3);
-        }
         width: 320px;
         margin-right: 50px;
+        &:before {
+          top: 15px;
+          left: 30px;
+          @include sprite($sprite-block-six-3);
+        }
       }
       &:nth-child(4) {
         margin-right: 10px;
         margin-left: 460px;
-                &:before {
+        &:before {
+          top: 20px;
+          left: 15px;
           @include sprite($sprite-block-six-4);
         }
       }
       &:nth-child(5) {
-
-                &:before {
+        &:before {
+          top: 15px;
           @include sprite($sprite-block-six-5);
         }
       }
