@@ -1,7 +1,7 @@
 /*
  *  Owl Carousel - Animate Plugin
  */
-
+.review-carousel,
 .owl-carousel {
   .animated {
     animation-duration: 1000ms;
@@ -50,7 +50,7 @@
 /*
  *  Core Owl Carousel CSS File
  */
-
+.review-carousel,
 .owl-carousel {
   /* position relative and z-index fix webkit rendering fonts issue */
   position: relative;
@@ -163,7 +163,7 @@
 /*
  *  Owl Carousel - Lazy Load Plugin
  */
-
+.review-carousel,
 .owl-carousel {
   .owl-item {
     .owl-lazy {
@@ -224,7 +224,3 @@
     z-index: 1;
   }
 }
-
-/*
- *  Owl Carousel - Video Plugin
- */

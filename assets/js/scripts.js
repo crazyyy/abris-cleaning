@@ -127,6 +127,15 @@ $('.owl-carousel').owlCarousel({
   touchDrag: false,
   dotsSpeed: 600
 })
+$('.review-carousel').owlCarousel({
+  loop: true,
+  nav: true,
+  dots: false,
+  items: 1,
+  mouseDrag: false,
+  touchDrag: false,
+  dotsSpeed: 600
+})
 // $(document).ready(function(){
 //   $(".owl-carousel").owlCarousel();
 // });

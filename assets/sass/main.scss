@@ -1197,6 +1197,99 @@ article {
 
     @extend .zebra;
   }
+  .review-carousel {
+    font-weight: $light;
+
+    width: 850px;
+    margin: 0 auto;
+    .owl-stage-outer {
+      z-index: 50;
+    }
+    .owl-item {
+      z-index: 50;
+
+      padding: 0 0 0 150px;
+      div {
+        position: relative;
+        z-index: 55;
+      }
+    }
+    img {
+      position: absolute;
+      top: 20px;
+      left: -130px;
+
+      width: 110px;
+      height: 110px;
+
+      border-radius: 50%;
+    }
+    h4 {
+      font-size: em(18, 16);
+      font-weight: bold;
+
+      margin: 0 0 25px;
+      a {
+        text-decoration: underline;
+
+        color: #486e98;
+        &:hover {
+          text-decoration: none;
+        }
+        &:after {
+          position: relative;
+          top: 5px;
+
+          display: inline-block;
+
+          margin-left: 5px;
+
+          @extend .dblock;
+        }
+      }
+      &.vk {
+        a {
+          &:after {
+            @include sprite($sprite-ico-vk);
+          }
+        }
+      }
+    }
+  }
+  .owl-controls {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    .owl-nav {
+      position: relative;
+      .owl-prev,
+      .owl-next {
+        font-size: 0;
+
+        position: absolute;
+        top: 20px;
+
+        display: block !important;
+
+        opacity: .8;
+        &:hover {
+          opacity: 1;
+        }
+      }
+      .owl-prev {
+        left: -90px;
+
+        @include sprite($sprite-owl-prev);
+      }
+      .owl-next {
+        right: -90px;
+
+        @include sprite($sprite-owl-next);
+      }
+    }
+  }
 }
 .block-thirteen {
   position: relative;
