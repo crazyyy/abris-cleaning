@@ -41,7 +41,7 @@
       <ul class="phone-block">
         <li><a href="tel:83838888888">8 (383) 888 88 88</a></li>
         <li><a href="tel:89231445240">8 (923) 144 52 40</a></li>
-        <li><a class="recall" href="#">заказать звонок</a></li>
+        <li><span class="recall">заказать звонок</span></li>
       </ul>
 
     </div><!-- /.inner -->
@@ -188,9 +188,9 @@
       <div class="inner">
         <h1>КАК МЫ <span>НАВОДИМ ЧИСТОТУ</span> В ДОМЕ</h1>
         <div class="yotuber">
-<!--           <iframe width="813" height="610" src="https://www.youtube.com/embed/6OIt_hPhgSw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe> -->
+          <iframe width="813" height="610" src="https://www.youtube.com/embed/6OIt_hPhgSw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
         </div><!-- /.yotuber -->
-        <a href="" class="btn btn-orange">Заказать уборку</a>
+        <a href="" class="btn btn-orange recall">Заказать уборку</a>
       </div><!-- /.inner -->
     </article><!-- /.block-fourth -->
 
@@ -198,7 +198,7 @@
       <div class="inner">
         <h1><span>5 ШАГОВ</span> К ЧИСТОТЕ И УЮТУ У ВАС ДОМА</h1>
         <ul>
-          <li><span>шаг 1</span>Вы оставляете заявку на сайте<a href="#" class="btn btn-small btn-orange">Оставить заявку</a></li>
+          <li><span>шаг 1</span>Вы оставляете заявку на сайте<a href="#" class="btn btn-small btn-orange recall">Оставить заявку</a></li>
           <li><span>шаг 2</span>Наш специалист связывается с вами и консультирует по всем вопросам</li>
           <li><span>шаг 3</span>Мы рассчитываем стоимость</li>
           <li><span>шаг 4</span>Мы выезжаем и проводим уборку</li>
@@ -248,7 +248,7 @@
           <div><img src="img/results.jpg" alt=""></div>
         </div>
 
-        <a href="#" class="btn btn-orange">Хочу так же</a>
+        <a href="#" class="btn btn-orange recall">Хочу так же</a>
 
       </div><!-- /.inner -->
     </article><!-- /.block-eight -->

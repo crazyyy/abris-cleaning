@@ -187,9 +187,13 @@ header {
     .recall {
       font-size: em(14, 16);
       font-weight: bold;
+      line-height: .95;
+
+      display: block;
 
       padding-right: 5px;
 
+      cursor: pointer;
       text-decoration: underline;
 
       color: $blue;
@@ -1418,5 +1422,240 @@ footer {
     }
   }
 }
+
+/*
+ * SimpleModal Contact Form
+ * http://simplemodal.com
+ *
+ * Copyright (c) 2013 Eric Martin - http://ericmmartin.com
+ *
+ * Licensed under the MIT license:
+ *   http://www.opensource.org/licenses/mit-license.php
+ */
+
+/* Overlay */
+
+#contact-overlay {
+  background-color: #000;
+}
+
+/* Container */
+
+#contact-container {
+  top: 150px !important;
+
+  width: 350px;
+
+  text-align: center;
+  .contact-content {
+    font-size: 1em;
+
+    position: relative;
+
+    width: 350px;
+    height: 400px;
+    padding: 00;
+
+    text-align: center;
+
+    color: $base-font-color;
+    border-radius: $base-border-radius;
+    background-color: #fff;
+    form {
+      width: 100%;
+      margin: 0;
+      padding: 0 30px;
+
+      border: 0;
+      border-radius: 0;
+      background-color: #fff;
+      h3 {
+        font-size: em(22, 16);
+        font-weight: $ebold;
+
+        margin-right: -30px;
+        margin-bottom: 15px;
+        margin-left: -30px;
+        padding: 15px 30px;
+
+        text-transform: uppercase;
+
+        color: #fff;
+        background-color: $blue;
+      }
+      .confd {
+        font-size: em(13, 16);
+
+        margin: 15px 0;
+
+        color: #848484;
+        i {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  .contact-loading {
+    position: absolute;
+    z-index: 8000;
+
+    width: 100%;
+    height: 150px;
+    margin: 0 auto 190px;
+    padding: 0;
+  }
+  .contact-message {
+    position: relative;
+
+    width: 100%;
+    height: 1px !important;
+
+    text-align: center;
+  }
+  .contact-error {
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1.2;
+
+    position: absolute;
+    top: -45px;
+    left: 0;
+
+    width: 92%;
+    margin: 0 4%;
+    padding: 5px;
+
+    color: $orange;
+    border: 2px solid $base-border-color;
+    border-radius: $base-border-radius;
+    background-color: $base-font-color;
+  }
+  br {
+    clear: both;
+  }
+  .contact-top {
+    height: 1em;
+    margin: 0;
+    padding: 0;
+
+    border-radius: $base-border-radius $base-border-radius 0 0;
+    background-color: #fff;
+  }
+  .contact-bottom {
+    font-size: 1em;
+    line-height: 1;
+
+    height: 1em;
+
+    text-align: center;
+
+    border-radius: 0 0 $base-border-radius $base-border-radius;
+    background-color: #fff;
+    a {
+      position: relative;
+      top: -4px;
+
+      text-decoration: none;
+
+      color: $action-color;
+      &:link,
+      &:active,
+      &:visited {
+        position: relative;
+        top: -4px;
+
+        text-decoration: none;
+
+        color: #666;
+      }
+      &:hover {
+        color: #888;
+      }
+    }
+  }
+  a.modal-close {
+    font-size: 0;
+
+    position: absolute;
+    top: -50px;
+    right: -65px;
+
+    text-decoration: none;
+
+    @include sprite($sprite-modal-close);
+    &:hover {
+      color: #ccc;
+    }
+  }
+  .thanx {
+    padding: 30px;
+    h4 {
+      font-size: em(36, 16);
+      font-weight: normal;
+
+      margin: 0 0 10px;
+
+      color: $green;
+    }
+    p {
+      font-size: em(18, 16);
+
+      margin: 0;
+    }
+    ul {
+      font-size: em(18, 16);
+
+      text-align: left;
+      a {
+        font-weight: bold;
+      }
+      li {
+        position: relative;
+
+        margin: 0;
+        padding: 5px 5px 5px 30px;
+        &:before {
+          position: absolute;
+          top: 11px;
+          left: 2px;
+
+          display: block;
+
+          color: $orange;
+
+          @extend .fa;
+        }
+        &:first-child {
+          &:before {
+            content: '';
+          }
+        }
+        &:last-child {
+          &:before {
+            content: '';
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @import 'import/print';

@@ -47,7 +47,7 @@ jQuery(function ($) {
         $.get("data/recall.php", function(data){
           // create a modal dialog with the data
           $(data).modal({
-            closeHTML: "<a href='#' title='Close' class='modal-close'>x</a>",
+            closeHTML: "<a href='#' title='Close' class='modal-close'><span>x</span>закрыть</a>",
             autoPosition: true,
             overlayId: 'contact-overlay',
             containerId: 'contact-container',

@@ -34,20 +34,21 @@ if (empty($action)) {
       <div class='contact-message' style='display:none'></div>
 
       <form action='#' style='display:none'>
-        <h3>Оставьте заявку</h3>
-        <p>и мы вам обязательно перезвоним в ближайшее время</p>
-        <input type='text' id='contact-name' class='contact-input' name='name' placeholder='Введите Ваше имя' />
-        <input type='hidden' id='contact-email' class='contact-input' name='email' value='info@net-komaroff.ru' />
-        <input type='tel' id='contact-tel' class='contact-input contact-phone' name='phone' placeholder='Укажие телефон 0 (000) 000-00-00' />";
+        <h3>Заказать обратный звонок</h3>
+        <p>После отправки заказа наши специалисты свяжутся с вами в ближайшее время</p>
+        <input type='text' id='contact-name' class='contact-input' name='name' placeholder='Имя' />
+        <input type='hidden' id='contact-email' class='contact-input' name='email' value='email@abris-cleaning.info' />
+        <input type='tel' id='contact-tel' class='contact-input contact-phone' name='phone' placeholder='Телефон' />";
 
   $output .= "
       <input type='hidden' id='contact-message' class='contact-input' name='message' value='Сообщение с формы ПЕРЕЗВОНИТЬ'>
       <br/>";
 
   $output .= "
-      <button type='submit' class='contact-send contact-button'>Заказать звонок</button>
+      <button type='submit' class='contact-send btn btn-orange'>Заказать звонок</button>
       <br/>
       <input type='hidden' name='token' value='" . smcf_token($to) . "'/>
+      <p class='confd'><i class='fa fa-lock'></i>Ваши персональные данные защищены</p>
     </form>
   </div>
   </div>";
@@ -67,12 +68,7 @@ else if ($action == "send") {
     smcf_send($name, $email, $subject, $message, $cc);
     echo "<div class='thanx'>
   <h4>Благодарим вас за заявку</h4>
-  <p>Менеджер свяжется с вами в ближайшее время. <br>
-  А пока можете:</p>
-  <ul>
-    <li>посмотреть короткое видео <a href='https://www.youtube.com/watch?v=9lhxtPUNP4I' target='_blank' class='yt'>«Уничтожитель комаров SketteerVac»</a></li>
-    <li>ознакомиться с <a href='instruction.pdf' target='_blank' class='pdf'>инструкцией по применению</a></li>
-  </ul>
+  <p>Менеджер свяжется с вами в ближайшее время. <br></p>
   </div>
   <!-- /.thanx -->";
   }
