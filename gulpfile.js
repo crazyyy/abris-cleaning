@@ -145,7 +145,7 @@ gulp.task('serve', ['sprite', 'images', 'scripts', 'styles', 'fonts'], function 
   if (htmlOWp === true) {
     browserSync({
       notify: false,
-      port: 9000,
+      port: 1654,
       server: {
         baseDir: basePaths.dest,
       }

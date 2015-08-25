@@ -239,6 +239,8 @@ header {
 }
 
 form {
+  position: relative;
+
   width: 290px;
   margin-right: auto;
   margin-left: auto;
@@ -258,6 +260,47 @@ form {
   .btn {
     width: 270px;
     margin-bottom: 0;
+  }
+  .message {
+    display: none;
+    &.message-err {
+      display: block;
+
+      color: red;
+    }
+    &.message-ok {
+      display: block;
+
+      color: green;
+    }
+  }
+  .thanx {
+    position: absolute;
+    z-index: 50;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: none;
+
+    border: 0;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: $form-box-shadow;
+    h4 {
+      font-size: 1.5em;
+      font-weight: bold;
+
+      width: 90%;
+
+      color: $violet;
+
+      @extend .align-center;
+      span {
+        font-weight: normal;
+      }
+    }
   }
 }
 section {
@@ -1324,8 +1367,8 @@ article {
 
     color: #fff;
     background-color: $blue;
-    h3,
-    h4 {
+    h5,
+    h6 {
       font-size: em(43, 16);
       font-weight: bold;
 
@@ -1333,7 +1376,7 @@ article {
 
       text-transform: uppercase;
     }
-    h4 {
+    h6 {
       font-size: em(37, 16);
     }
     p {

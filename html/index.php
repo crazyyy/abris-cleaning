@@ -62,9 +62,13 @@
             <div class="timer"></div>
             <input type="text" name="name" placeholder="Имя">
             <input type="text" name="phone" placeholder="Телефон">
-            <input type="hidden" name="email" placeholder="email@abris-cleaning.info">
+            <input type="hidden" name="email" value="email@abris-cleaning.info">
             <input type="hidden" name="hidden" value="ok">
             <button class="btn btn-orange">получить скидку</button>
+            <h4 class="message">Отправляем...</h4>
+            <div class="thanx">
+              <h4>Благодарим вас за заявку <br><span>Менеджер свяжется с вами в ближайшее время.</span></h4>
+            </div><!-- thanx -->
           </form>
         </div>
       </div><!-- /.inner -->
@@ -294,9 +298,13 @@
           <p>После отправки заказа наши специалисты свяжутся с Вами ближайшее время</p>
           <input type="text" name="name" placeholder="Имя">
           <input type="text" name="phone" placeholder="Телефон">
-          <input type="hidden" name="email" placeholder="email@abris-cleaning.info">
+          <input type="hidden" name="email" value="email@abris-cleaning.info">
           <input type="hidden" name="hidden" value="ok">
           <button class="btn btn-orange">заказать уборку</button>
+          <h4 class="message">Отправляем...</h4>
+          <div class="thanx">
+            <h4>Благодарим вас за заявку <br><span>Менеджер свяжется с вами в ближайшее время.</span></h4>
+          </div><!-- thanx -->
         </form>
 
       </div><!-- /.inner -->
@@ -334,19 +342,23 @@
       </div><!-- /.box-map -->
       <div class="inner">
         <div class="box-contact">
-          <h3>Контакты</h3>
+          <h5>Контакты</h5>
           <p>г.Новосбирск, ул.Челюскинцев 44/2</p>
           <a href="tel:83838888888">8 (383) 888 88 88</a>
           <a class="phone2" href="tel:89231445240">8 (923) 144 52 40</a>
-          <h4>закажите уборку</h4>
+          <h6>закажите уборку</h6>
           <form action="data/form.php" method="post">
             <p>После отправки заказа наши специалисты свяжутся с Вами ближайшее время</p>
             <input type="text" name="name" placeholder="Имя">
             <input type="text" name="phone" placeholder="Телефон">
-            <input type="hidden" name="email" placeholder="email@abris-cleaning.info">
+            <input type="hidden" name="email" value="email@abris-cleaning.info">
             <input type="hidden" name="hidden" value="ok">
             <button class="btn btn-orange">заказать уборку</button>
-          </form>
+            <h4 class="message">Отправляем...</h4>
+            <div class="thanx">
+              <h4>Благодарим вас за заявку <br><span>Менеджер свяжется с вами в ближайшее время.</span></h4>
+            </div><!-- thanx -->
+            </form>
         </div><!-- /.box-contact -->
 
       </div><!-- /.inner -->
