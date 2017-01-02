@@ -35,9 +35,9 @@ $('.plain-form').on('submit', function(e) {
 
   $(message).fadeIn(200);
   if (name != null && name.length == 0) {
-    $(message).addClass('message-err').html('Укажите имя');
-    $(inputName).addClass('input-error');
-    event.preventDefault();
+    // $(message).addClass('message-err').html('Укажите имя');
+    // $(inputName).addClass('input-error');
+    // event.preventDefault();
   } else if (phone != null && phone.length == 0) {
     $(inputName).removeClass('input-error');
     $(message).addClass('message-err').html('Укажите телефон');

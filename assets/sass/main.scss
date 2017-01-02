@@ -173,6 +173,7 @@ header {
     }
     a {
       font-size: em(16,16);
+      font-weight: $ebold;
       line-height: .95;
 
       display: block;
@@ -376,13 +377,14 @@ article {
     }
   }
   .block-first-content {
+    font-size: 1.375em;
     line-height: 1.5;
 
     position: absolute;
     top: 480px;
-    left: 340px;
+    left: 320px;
 
-    width: 260px;
+    width: 270px;
 
     text-align: right;
 
@@ -1160,6 +1162,12 @@ article {
       position: absolute;
       top: 30px;
       left: 30px;
+      &:before {
+        content: '>';
+      }
+      &:after {
+        content: '%';
+      }
     }
   }
   .box-transparent {

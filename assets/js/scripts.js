@@ -100,6 +100,23 @@ $(document).ready(function() {
         }, 60);
       });
   });
+  $('.box-blue').on('animateIn', function() {
+      $(this).find('.num').each(function() {
+        var count =  parseInt($(this).attr('data-number'));
+        var block = $(this);
+        var timeout = null;
+        var step = 1;
+        timeout = setInterval(function() {
+          if (step == 25) {
+            block.text(count.toString());
+            clearInterval(timeout);
+          } else {
+            block.text((Math.floor(count*step/25)).toString());
+            step++;
+          }
+        }, 60);
+      });
+  });
   new WOW().init();
 });
 
@@ -155,11 +172,7 @@ $('form').on('submit', function(e) {
     message = $('.current-form .message');
 
   $(message).fadeIn(200);
-  if (name != null && name.length == 0) {
-    $(message).addClass('message-err').html('Укажите имя');
-    $(inputName).addClass('input-error');
-    event.preventDefault();
-  } else if (phone != null && phone.length == 0) {
+  if (phone != null && phone.length == 0) {
     $(inputName).removeClass('input-error');
     $(message).addClass('message-err').html('Укажите телефон');
     $(inputPhone).addClass('input-error');
